@@ -60,7 +60,46 @@ with open("file5.txt", 'r') as file:
 
 f1=open("new.txt",'a')
 f1.writelines(txt)
-f1.close()'''
+f1.close()
+
+class LowLengthError(Exception):
+    def __init__(self):
+        super(LowLengthError, self).__init__("String length must be greater than 3. ")
+
+string = str(input("Enter any string....  "))
+if len(string)<3:
+    raise LowLengthError
+else:
+    print("Accepted")
+
+a = int(input("Enter the first number\t"))
+b = int(input("Enter the second number\t"))
+div = a / b
+print(div)
+except ZeroDivisionError:
+    print("You cannot have division by zero.")
+except:
+    print("Some error has occurred, check it again")
+
+#CLASS8
+# Using the OS library change the name of a file.
+
+import os
+os.rename(r'C:\november11\prachi.txt',r'C:\november11\rename.txt')
+
+# Using Print the current weekday, day, month  and year in separate statements.
+
+import datetime as dt
+print(dt.date.today(),'\n')
+print("year:",dt.date.today().year,)
+print("month:",dt.date.today().month,)
+print("day:", dt.date.today().day)
+print("Week:",dt.date.today().weekday(),'\n')'''
+
+# Use two functions in the math library.
+import math
+print("The square root of 5 is\t", math.sqrt(5))
+print("The value of cosine 30 is", math.cos(30))
 
 
 

@@ -76,7 +76,7 @@ button15.place(relx=0.53, rely=0.71)
 button16=Button(root, text='/',command=lambda :press('/'), height=4, width=7)
 button16.place(relx=0.77, rely=0.71)
 button17=Button(root,text='=',command=lambda :equalpress(),height=3, width=44)
-button17.place(relx=0.02, rely=0.87)
+button17.place(relx=0.02, rely=0.88)
 
 
 root.mainloop()
